@@ -1,0 +1,12 @@
+.card-stage{position:relative;min-width:0;isolation:isolate;--slide-sign:1;--slide-distance:100%}
+.card-stage[data-navigation="previous"]{--slide-sign:-1}
+.card-stage[data-navigation="random"]{--slide-distance:24px}
+.card-stage.is-transitioning{overflow:clip;border-radius:26px}
+.card-stage.is-transitioning>.card{min-height:var(--transition-height,0px)}
+.card-stage>.outgoing-card{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:1}
+.card-stage>.card:not(.outgoing-card){position:relative;z-index:2}
+.card-slide-in{animation:card-enter .3s cubic-bezier(.22,1,.36,1) both;will-change:transform,opacity}
+.card-slide-out{animation:card-leave .3s cubic-bezier(.22,1,.36,1) both;will-change:transform,opacity}
+@keyframes card-enter{from{transform:translateX(calc(var(--slide-distance)*var(--slide-sign)));opacity:.15}to{transform:translateX(0);opacity:1}}
+@keyframes card-leave{from{transform:var(--outgoing-start-transform,translateX(0));opacity:var(--outgoing-start-opacity,1)}to{transform:translateX(calc(var(--slide-distance)*var(--slide-sign)*-1));opacity:0}}
+@media(prefers-reduced-motion:reduce){.card-slide-in,.card-slide-out,.fade{animation:none;will-change:auto}.button{transition:none}.button:hover{transform:none}}

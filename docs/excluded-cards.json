@@ -1,0 +1,15 @@
+{
+  "excludedCardIds": [
+    478,
+    492
+  ],
+  "excludedNames": [
+    "Vladimir Putin",
+    "Adolf Hitler"
+  ],
+  "canonicalCards": 594,
+  "displayedDeckCards": 592,
+  "canonicalDataUnchanged": true,
+  "integrationTests": "PASS",
+  "productionModified": false
+}

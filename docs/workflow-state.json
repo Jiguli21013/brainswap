@@ -5907,5 +5907,32 @@
     "dataUnchanged": true,
     "integrationPassed": true,
     "desktopLaptopAll594CardsFit": true
+  },
+  "latestViewportFitValidation": {
+    "report": "docs/viewport-fit-tests.json",
+    "dataUnchanged": true,
+    "integrationPassed": true,
+    "all594FitAtAllEightViewports": true,
+    "mobileReadabilityLimitation": "About 8.28px list text on longest cards at 390×844; strict single-screen requirement makes mobile reading/touch targets small."
+  },
+  "latestWikipediaImageLoading": {
+    "report": "docs/wikipedia-image-loading-report.json",
+    "canonicalDataUnchanged": true,
+    "testsPassed": true,
+    "henryVIIIRecoveryAndPersistentCachePassed": true,
+    "storedUrlCountAll": 583,
+    "storedUrlCountActive": 581,
+    "missingStoredUrlsActive": 11,
+    "fullLiveAvailabilityAuditPerformed": false
+  },
+  "latestThemeAndTransitions": {
+    "report": "docs/theme-transition-report.json",
+    "default": "dark",
+    "savedThemePreference": true,
+    "bothThemeLayoutsEqualToOriginal": true,
+    "all594CardsAtEightViewportsPassed": true,
+    "realTwoSecondImageDelayTestPassed": true,
+    "fourTestSuitesPassed": true,
+    "canonicalDataUnchanged": true
   }
 }

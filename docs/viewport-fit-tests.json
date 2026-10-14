@@ -1,0 +1,284 @@
+{
+  "date": "2026-10-14",
+  "approach": "Measure natural interface dimensions at a small number of useful wide/stacked canvas widths; choose the layout with the largest fitting uniform scale; apply a single transform to the entire shell, centered inside a 100dvh viewport. Document scrolling is disabled, but the transformed content bounds are independently checked to fit.",
+  "recalculationTriggers": [
+    "window resize",
+    "visual viewport resize/offset changes",
+    "viewport ResizeObserver",
+    "fonts ready",
+    "card content changes",
+    "image fallback attribution changes"
+  ],
+  "scheduling": "requestAnimationFrame coalesces requests; the scaled shell is not observed, avoiding resize feedback loops",
+  "canonicalDataUnchanged": true,
+  "canonicalDataSha256": "b29ec0c79791238fc73ba13c6649fed09f1a0241e567a36f1b8cff95dcb03192",
+  "totalCanonicalCards": 594,
+  "totalImageUrls": 583,
+  "displayedDeckCards": 592,
+  "excludedCardIdsPreserved": [
+    478,
+    492
+  ],
+  "all594CardsTested": true,
+  "realBrowser": "Codex in-app browser",
+  "testFixture": "Uses the application renderer and production scaling engine, with animations suppressed for deterministic overlap checks and image network downloads replaced by the existing local fallback only in the temporary test fixture. Actual website separately tested for live resizing, keyboard navigation, image cover cropping, and the preserved appear animation.",
+  "viewports": [
+    {
+      "allFit": true,
+      "cardsTested": 594,
+      "failures": [],
+      "minBioFont": 16,
+      "minBodyFont": 14,
+      "minButtonHeight": 44,
+      "minScale": 1,
+      "viewport": {
+        "height": 1080,
+        "width": 1920
+      }
+    },
+    {
+      "allFit": true,
+      "cardsTested": 594,
+      "failures": [],
+      "minBioFont": 15.85584,
+      "minBodyFont": 13.87386,
+      "minButtonHeight": 43.6036376953125,
+      "minScale": 0.99099,
+      "viewport": {
+        "height": 900,
+        "width": 1440
+      }
+    },
+    {
+      "allFit": true,
+      "cardsTested": 594,
+      "failures": [],
+      "minBioFont": 13.47744,
+      "minBodyFont": 11.79276,
+      "minButtonHeight": 37.06292724609375,
+      "minScale": 0.84234,
+      "viewport": {
+        "height": 768,
+        "width": 1366
+      }
+    },
+    {
+      "allFit": true,
+      "cardsTested": 594,
+      "failures": [],
+      "minBioFont": 14.05392,
+      "minBodyFont": 12.29718,
+      "minButtonHeight": 38.6483154296875,
+      "minScale": 0.87837,
+      "viewport": {
+        "height": 800,
+        "width": 1280
+      }
+    },
+    {
+      "allFit": true,
+      "cardsTested": 594,
+      "failures": [],
+      "minBioFont": 12.61248,
+      "minBodyFont": 11.03592,
+      "minButtonHeight": 34.684326171875,
+      "minScale": 0.78828,
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      }
+    },
+    {
+      "allFit": true,
+      "cardsTested": 594,
+      "failures": [],
+      "minBioFont": 11.988,
+      "minBodyFont": 10.4895,
+      "minButtonHeight": 32.96697998046875,
+      "minScale": 0.74925,
+      "viewport": {
+        "height": 768,
+        "width": 1024
+      }
+    },
+    {
+      "allFit": true,
+      "cardsTested": 594,
+      "failures": [],
+      "minBioFont": 13.49904,
+      "minBodyFont": 11.81166,
+      "minButtonHeight": 37.12237548828125,
+      "minScale": 0.84369,
+      "viewport": {
+        "height": 1024,
+        "width": 768
+      }
+    },
+    {
+      "allFit": true,
+      "cardsTested": 594,
+      "failures": [],
+      "minBioFont": 9.45744,
+      "minBodyFont": 8.27526,
+      "minButtonHeight": 26.0079345703125,
+      "minScale": 0.59109,
+      "viewport": {
+        "height": 844,
+        "width": 390
+      }
+    }
+  ],
+  "liveResizeChecks": [
+    {
+      "documentHeight": 720,
+      "documentWidth": 1280,
+      "layout": "wide",
+      "name": "Marc Chagall",
+      "nav": {
+        "bottom": 659.9337768554688,
+        "height": 35.68927001953125,
+        "left": 116.0165023803711,
+        "right": 1163.9834213256836,
+        "top": 624.2445068359375,
+        "width": 1047.9669189453125,
+        "x": 116.0165023803711,
+        "y": 624.2445068359375
+      },
+      "scale": "0.81112",
+      "shell": {
+        "bottom": 710.0584716796875,
+        "height": 700.116943359375,
+        "left": 96.54962158203124,
+        "right": 1183.4505004882812,
+        "top": 9.9415283203125,
+        "width": 1086.90087890625,
+        "x": 96.54962158203124,
+        "y": 9.9415283203125
+      },
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      }
+    },
+    {
+      "documentHeight": 844,
+      "documentWidth": 390,
+      "layout": "stacked",
+      "name": "Marc Chagall",
+      "nav": {
+        "bottom": 786.5733032226562,
+        "height": 27.99761962890625,
+        "left": 32.104644775390625,
+        "right": 357.8953857421875,
+        "top": 758.57568359375,
+        "width": 325.7907409667969,
+        "x": 32.104644775390625,
+        "y": 758.57568359375
+      },
+      "scale": "0.63631",
+      "shell": {
+        "bottom": 838.2387084960938,
+        "height": 832.4774169921875,
+        "left": 16.833206176757812,
+        "right": 373.1668243408203,
+        "top": 5.76129150390625,
+        "width": 356.3336181640625,
+        "x": 16.833206176757812,
+        "y": 5.76129150390625
+      },
+      "viewport": {
+        "height": 844,
+        "width": 390
+      }
+    },
+    {
+      "documentHeight": 1080,
+      "documentWidth": 1920,
+      "layout": "wide",
+      "name": "Marc Chagall",
+      "nav": {
+        "bottom": 909.77734375,
+        "height": 44,
+        "left": 314,
+        "right": 1606,
+        "top": 865.77734375,
+        "width": 1292,
+        "x": 314,
+        "y": 865.77734375
+      },
+      "scale": "1",
+      "shell": {
+        "bottom": 971.57421875,
+        "height": 863.1484375,
+        "left": 290,
+        "right": 1630,
+        "top": 108.42578125,
+        "width": 1340,
+        "x": 290,
+        "y": 108.42578125
+      },
+      "viewport": {
+        "height": 1080,
+        "width": 1920
+      }
+    },
+    {
+      "documentHeight": 768,
+      "documentWidth": 1024,
+      "layout": "wide",
+      "name": "Marc Chagall",
+      "nav": {
+        "bottom": 705.81396484375,
+        "height": 37.10479736328125,
+        "left": 59.99658966064453,
+        "right": 964.0034255981444,
+        "top": 668.7091674804688,
+        "width": 904.0068359375,
+        "x": 59.99658966064453,
+        "y": 668.7091674804688
+      },
+      "scale": "0.84329",
+      "shell": {
+        "bottom": 757.9266357421875,
+        "height": 747.853271484375,
+        "left": 39.75762939453125,
+        "right": 984.2423706054688,
+        "top": 10.0733642578125,
+        "width": 944.4847412109376,
+        "x": 39.75762939453125,
+        "y": 10.0733642578125
+      },
+      "viewport": {
+        "height": 768,
+        "width": 1024
+      }
+    }
+  ],
+  "keyboardNavigation": "PASS: ArrowRight changes card and ArrowLeft restores it",
+  "imageCropping": "object-fit: cover; object-position: center top",
+  "animationsPreserved": true,
+  "integrationTests": "PASS",
+  "viewportFitTests": "PASS",
+  "productionModified": false,
+  "fullManualReviewModeImplemented": false,
+  "limitations": [
+    "Strict single-screen fitting trades readability for fitting on small screens. At 390×844, the longest cards have effective list text about 8.28px and biography text about 9.46px; footer text can be about 6.50px and buttons about 26px high. This is not a comfortable mobile reading/touch layout. All text remains present and visible; no truncation or scrolling is introduced.",
+    "At 1024×768, longest-card list text can be about 10.49px. At 1280×720 it can be about 11.04px. Larger windows are preferable for comfortable reading.",
+    "Tests use default browser font settings in one browser engine. Browser minimum-font preferences, zoom, or platform text settings can change the natural measurements and scaling; full mobile readability is not guaranteed."
+  ],
+  "filesChanged": [
+    "index.html",
+    "app.js",
+    "viewport-fit.js (new)",
+    "scripts/test-integration.mjs",
+    "scripts/test-viewport-fit.mjs (new)",
+    "README.md",
+    "docs/workflow-state.json",
+    "docs/viewport-fit-tests.md (new)",
+    "docs/viewport-fit-tests.json (new)",
+    "docs/viewport-fit-all-card-measurements.json (new)",
+    "docs/viewport-fit-laptop-preview.png (new)",
+    "docs/viewport-fit-mobile-preview.png (new)",
+    "../brainswap-checkpoint.zip"
+  ]
+}

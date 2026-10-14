@@ -1,0 +1,215 @@
+{
+  "date": "2026-10-14",
+  "canonicalCards": 594,
+  "activeDeckCards": 592,
+  "canonicalStoredImageUrls": 583,
+  "activeStoredImageUrls": 581,
+  "activeCardsMissingStoredUrls": 11,
+  "allCanonicalDataUnchanged": true,
+  "canonicalDataSha256": "b29ec0c79791238fc73ba13c6649fed09f1a0241e567a36f1b8cff95dcb03192",
+  "verificationStatusesUnchanged": true,
+  "productionModified": false,
+  "fullLiveDeckAvailabilityAudited": false,
+  "liveSampleScope": "The two-card cached browser session plus the separately checked 11 missing-URL cards. Henry VIII fallback was exercised by simulating failure of its working stored image. These are test-sample counts, not full-deck download availability totals.",
+  "combinedLiveSampleCounts": {
+    "stored": 1,
+    "wikipedia": 1,
+    "placeholder": 11,
+    "cards": 13
+  },
+  "henryVIIIStoredImageLoaded": true,
+  "henryVIIIWikipediaFallback": {
+    "credit": "Unverified Wikipedia image — reuse rights and identity have not been checked. Wikipedia image source ↗ · Image file / rights ↗ · Stored image record: Workshop of Hans Holbein the Younger · Public domain · Commons file used as published; displayed crop uses existing CSS.",
+    "kind": "wikipedia",
+    "name": "Henry VIII",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/After_Hans_Holbein_the_Younger_-_Portrait_of_Henry_VIII_-_Google_Art_Project.jpg/960px-After_Hans_Holbein_the_Younger_-_Portrait_of_Henry_VIII_-_Google_Art_Project.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "width": 960
+  },
+  "persistentCacheVerified": true,
+  "additionalApiCallsAfterReload": 0,
+  "missingUrlLiveOutcomes": [
+    {
+      "credit": " · No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass.",
+      "kind": "placeholder",
+      "name": "Gianni Versace",
+      "naturalWidth": 117,
+      "src": "data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20700%20900%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20stop-color%3D%22%23013BA7%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%2304B8EB%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%22700%22%20height%3D%22900%22%20fill%3D%22url(%23g)%22%2F%3E%3Ccircle%20cx%3D%22350%22%20cy%3D%22335%22%20r%3D%22120%22%20fill%3D%22%232EEBE0%22%20opacity%3D%22.35%22%2F%3E%3Cpath%20d%3D%22M115%20800%20Q120%20500%20350%20500%20Q580%20500%20585%20800%22%20fill%3D%22%232EEBE0%22%20opacity%3D%22.35%22%2F%3E%3Ctext%20x%3D%22350%22%20y%3D%22100%22%20text-anchor%3D%22middle%22%20font-family%3D%22Arial%22%20font-size%3D%2226%22%20fill%3D%22white%22%3EImage%20unavailable%3C%2Ftext%3E%3C%2Fsvg%3E"
+    },
+    {
+      "credit": " · No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass.",
+      "kind": "placeholder",
+      "name": "Master Shifu",
+      "naturalWidth": 117,
+      "src": "data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20700%20900%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20stop-color%3D%22%23013BA7%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%2304B8EB%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%22700%22%20height%3D%22900%22%20fill%3D%22url(%23g)%22%2F%3E%3Ccircle%20cx%3D%22350%22%20cy%3D%22335%22%20r%3D%22120%22%20fill%3D%22%232EEBE0%22%20opacity%3D%22.35%22%2F%3E%3Cpath%20d%3D%22M115%20800%20Q120%20500%20350%20500%20Q580%20500%20585%20800%22%20fill%3D%22%232EEBE0%22%20opacity%3D%22.35%22%2F%3E%3Ctext%20x%3D%22350%22%20y%3D%22100%22%20text-anchor%3D%22middle%22%20font-family%3D%22Arial%22%20font-size%3D%2226%22%20fill%3D%22white%22%3EImage%20unavailable%3C%2Ftext%3E%3C%2Fsvg%3E"
+    },
+    {
+      "credit": " · No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass.",
+      "kind": "placeholder",
+      "name": "Alex the Lion",
+      "naturalWidth": 117,
+      "src": "data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20700%20900%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20stop-color%3D%22%23013BA7%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%2304B8EB%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%22700%22%20height%3D%22900%22%20fill%3D%22url(%23g)%22%2F%3E%3Ccircle%20cx%3D%22350%22%20cy%3D%22335%22%20r%3D%22120%22%20fill%3D%22%232EEBE0%22%20opacity%3D%22.35%22%2F%3E%3Cpath%20d%3D%22M115%20800%20Q120%20500%20350%20500%20Q580%20500%20585%20800%22%20fill%3D%22%232EEBE0%22%20opacity%3D%22.35%22%2F%3E%3Ctext%20x%3D%22350%22%20y%3D%22100%22%20text-anchor%3D%22middle%22%20font-family%3D%22Arial%22%20font-size%3D%2226%22%20fill%3D%22white%22%3EImage%20unavailable%3C%2Ftext%3E%3C%2Fsvg%3E"
+    },
+    {
+      "credit": " · No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass.",
+      "kind": "placeholder",
+      "name": "Marty the Zebra",
+      "naturalWidth": 117,
+      "src": "data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20700%20900%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20stop-color%3D%22%23013BA7%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%2304B8EB%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%22700%22%20height%3D%22900%22%20fill%3D%22url(%23g)%22%2F%3E%3Ccircle%20cx%3D%22350%22%20cy%3D%22335%22%20r%3D%22120%22%20fill%3D%22%232EEBE0%22%20opacity%3D%22.35%22%2F%3E%3Cpath%20d%3D%22M115%20800%20Q120%20500%20350%20500%20Q580%20500%20585%20800%22%20fill%3D%22%232EEBE0%22%20opacity%3D%22.35%22%2F%3E%3Ctext%20x%3D%22350%22%20y%3D%22100%22%20text-anchor%3D%22middle%22%20font-family%3D%22Arial%22%20font-size%3D%2226%22%20fill%3D%22white%22%3EImage%20unavailable%3C%2Ftext%3E%3C%2Fsvg%3E"
+    },
+    {
+      "credit": " · No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass.",
+      "kind": "placeholder",
+      "name": "Gloria the Hippo",
+      "naturalWidth": 117,
+      "src": "data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20700%20900%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20stop-color%3D%22%23013BA7%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%2304B8EB%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%22700%22%20height%3D%22900%22%20fill%3D%22url(%23g)%22%2F%3E%3Ccircle%20cx%3D%22350%22%20cy%3D%22335%22%20r%3D%22120%22%20fill%3D%22%232EEBE0%22%20opacity%3D%22.35%22%2F%3E%3Cpath%20d%3D%22M115%20800%20Q120%20500%20350%20500%20Q580%20500%20585%20800%22%20fill%3D%22%232EEBE0%22%20opacity%3D%22.35%22%2F%3E%3Ctext%20x%3D%22350%22%20y%3D%22100%22%20text-anchor%3D%22middle%22%20font-family%3D%22Arial%22%20font-size%3D%2226%22%20fill%3D%22white%22%3EImage%20unavailable%3C%2Ftext%3E%3C%2Fsvg%3E"
+    },
+    {
+      "credit": " · No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass.",
+      "kind": "placeholder",
+      "name": "Melman the Giraffe",
+      "naturalWidth": 117,
+      "src": "data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20700%20900%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20stop-color%3D%22%23013BA7%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%2304B8EB%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%22700%22%20height%3D%22900%22%20fill%3D%22url(%23g)%22%2F%3E%3Ccircle%20cx%3D%22350%22%20cy%3D%22335%22%20r%3D%22120%22%20fill%3D%22%232EEBE0%22%20opacity%3D%22.35%22%2F%3E%3Cpath%20d%3D%22M115%20800%20Q120%20500%20350%20500%20Q580%20500%20585%20800%22%20fill%3D%22%232EEBE0%22%20opacity%3D%22.35%22%2F%3E%3Ctext%20x%3D%22350%22%20y%3D%22100%22%20text-anchor%3D%22middle%22%20font-family%3D%22Arial%22%20font-size%3D%2226%22%20fill%3D%22white%22%3EImage%20unavailable%3C%2Ftext%3E%3C%2Fsvg%3E"
+    },
+    {
+      "credit": " · No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass.",
+      "kind": "placeholder",
+      "name": "King Julien",
+      "naturalWidth": 117,
+      "src": "data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20700%20900%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20stop-color%3D%22%23013BA7%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%2304B8EB%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%22700%22%20height%3D%22900%22%20fill%3D%22url(%23g)%22%2F%3E%3Ccircle%20cx%3D%22350%22%20cy%3D%22335%22%20r%3D%22120%22%20fill%3D%22%232EEBE0%22%20opacity%3D%22.35%22%2F%3E%3Cpath%20d%3D%22M115%20800%20Q120%20500%20350%20500%20Q580%20500%20585%20800%22%20fill%3D%22%232EEBE0%22%20opacity%3D%22.35%22%2F%3E%3Ctext%20x%3D%22350%22%20y%3D%22100%22%20text-anchor%3D%22middle%22%20font-family%3D%22Arial%22%20font-size%3D%2226%22%20fill%3D%22white%22%3EImage%20unavailable%3C%2Ftext%3E%3C%2Fsvg%3E"
+    },
+    {
+      "credit": " · No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass.",
+      "kind": "placeholder",
+      "name": "Skipper",
+      "naturalWidth": 117,
+      "src": "data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20700%20900%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20stop-color%3D%22%23013BA7%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%2304B8EB%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%22700%22%20height%3D%22900%22%20fill%3D%22url(%23g)%22%2F%3E%3Ccircle%20cx%3D%22350%22%20cy%3D%22335%22%20r%3D%22120%22%20fill%3D%22%232EEBE0%22%20opacity%3D%22.35%22%2F%3E%3Cpath%20d%3D%22M115%20800%20Q120%20500%20350%20500%20Q580%20500%20585%20800%22%20fill%3D%22%232EEBE0%22%20opacity%3D%22.35%22%2F%3E%3Ctext%20x%3D%22350%22%20y%3D%22100%22%20text-anchor%3D%22middle%22%20font-family%3D%22Arial%22%20font-size%3D%2226%22%20fill%3D%22white%22%3EImage%20unavailable%3C%2Ftext%3E%3C%2Fsvg%3E"
+    },
+    {
+      "credit": " · No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass.",
+      "kind": "placeholder",
+      "name": "Sulley",
+      "naturalWidth": 117,
+      "src": "data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20700%20900%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20stop-color%3D%22%23013BA7%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%2304B8EB%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%22700%22%20height%3D%22900%22%20fill%3D%22url(%23g)%22%2F%3E%3Ccircle%20cx%3D%22350%22%20cy%3D%22335%22%20r%3D%22120%22%20fill%3D%22%232EEBE0%22%20opacity%3D%22.35%22%2F%3E%3Cpath%20d%3D%22M115%20800%20Q120%20500%20350%20500%20Q580%20500%20585%20800%22%20fill%3D%22%232EEBE0%22%20opacity%3D%22.35%22%2F%3E%3Ctext%20x%3D%22350%22%20y%3D%22100%22%20text-anchor%3D%22middle%22%20font-family%3D%22Arial%22%20font-size%3D%2226%22%20fill%3D%22white%22%3EImage%20unavailable%3C%2Ftext%3E%3C%2Fsvg%3E"
+    },
+    {
+      "credit": " · No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass.",
+      "kind": "placeholder",
+      "name": "Kevin McCallister",
+      "naturalWidth": 117,
+      "src": "data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20700%20900%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20stop-color%3D%22%23013BA7%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%2304B8EB%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%22700%22%20height%3D%22900%22%20fill%3D%22url(%23g)%22%2F%3E%3Ccircle%20cx%3D%22350%22%20cy%3D%22335%22%20r%3D%22120%22%20fill%3D%22%232EEBE0%22%20opacity%3D%22.35%22%2F%3E%3Cpath%20d%3D%22M115%20800%20Q120%20500%20350%20500%20Q580%20500%20585%20800%22%20fill%3D%22%232EEBE0%22%20opacity%3D%22.35%22%2F%3E%3Ctext%20x%3D%22350%22%20y%3D%22100%22%20text-anchor%3D%22middle%22%20font-family%3D%22Arial%22%20font-size%3D%2226%22%20fill%3D%22white%22%3EImage%20unavailable%3C%2Ftext%3E%3C%2Fsvg%3E"
+    },
+    {
+      "credit": " · No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass.",
+      "kind": "placeholder",
+      "name": "Ralph — Wreck-It Ralph",
+      "naturalWidth": 117,
+      "src": "data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20700%20900%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20stop-color%3D%22%23013BA7%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%2304B8EB%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%22700%22%20height%3D%22900%22%20fill%3D%22url(%23g)%22%2F%3E%3Ccircle%20cx%3D%22350%22%20cy%3D%22335%22%20r%3D%22120%22%20fill%3D%22%232EEBE0%22%20opacity%3D%22.35%22%2F%3E%3Cpath%20d%3D%22M115%20800%20Q120%20500%20350%20500%20Q580%20500%20585%20800%22%20fill%3D%22%232EEBE0%22%20opacity%3D%22.35%22%2F%3E%3Ctext%20x%3D%22350%22%20y%3D%22100%22%20text-anchor%3D%22middle%22%20font-family%3D%22Arial%22%20font-size%3D%2226%22%20fill%3D%22white%22%3EImage%20unavailable%3C%2Ftext%3E%3C%2Fsvg%3E"
+    }
+  ],
+  "remainingMissingUrlCardIds": [
+    246,
+    408,
+    411,
+    412,
+    413,
+    414,
+    415,
+    416,
+    428,
+    565,
+    579
+  ],
+  "mockedFullDeckCounts": {
+    "stored": 581,
+    "wikipedia": 0,
+    "placeholder": 11,
+    "scope": "Integration fixture with successful stored loads and no-image API responses; not real network availability."
+  },
+  "integrationTests": {
+    "scripts/test-integration.mjs": "PASS: 592 visible cards render canonical fields; Putin and Hitler excluded, Rasputin retained; deck coverage, history, keyboard navigation, load failures and URL scheme checks.\nPASS: stored HTTPS images display regardless of verification status on localhost and GitHub Pages, with source links and existing rights warnings.\nPASS: card changes and image-loading results trigger viewport refitting.\nPASS: simulated full-deck image outcomes and unique-card counters: 581 stored, 0 Wikipedia, 11 placeholders (network mocked).",
+    "scripts/test-image-loader.mjs": "PASS: stored-first loading, missing/broken-image Wikipedia fallbacks, persistent success caching, source/rights preservation, CORS, missing/ambiguous pages, API/network/JSON errors, rate limiting, timeouts, cache recovery, disabled storage, and stale-result protection.",
+    "scripts/test-viewport-fit.mjs": "PASS: uniform width/height fitting, resize recovery, long-content refitting, coalesced requests, and visual viewport bounds."
+  },
+  "layoutChecks": [
+    {
+      "viewport": {
+        "height": 1080,
+        "width": 1920
+      },
+      "all594Fit": true,
+      "failures": []
+    },
+    {
+      "viewport": {
+        "height": 900,
+        "width": 1440
+      },
+      "all594Fit": true,
+      "failures": []
+    },
+    {
+      "viewport": {
+        "height": 768,
+        "width": 1366
+      },
+      "all594Fit": true,
+      "failures": []
+    },
+    {
+      "viewport": {
+        "height": 800,
+        "width": 1280
+      },
+      "all594Fit": true,
+      "failures": []
+    },
+    {
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "all594Fit": true,
+      "failures": []
+    },
+    {
+      "viewport": {
+        "height": 768,
+        "width": 1024
+      },
+      "all594Fit": true,
+      "failures": []
+    },
+    {
+      "viewport": {
+        "height": 1024,
+        "width": 768
+      },
+      "all594Fit": true,
+      "failures": []
+    },
+    {
+      "viewport": {
+        "height": 844,
+        "width": 390
+      },
+      "all594Fit": true,
+      "failures": []
+    }
+  ],
+  "requestStrategy": "Existing HTTPS image first, cached Wikipedia image second, then one anonymous CORS MediaWiki PageImages query for the existing wikiTitle. Prefer returned thumbnail; try returned original if needed.",
+  "cache": "Only successfully loaded Wikipedia image URLs are stored in localStorage for 30 days. Broken cache entries are evicted; missing/no-image titles are temporarily suppressed in memory, transient failures for one minute, and 429 Retry-After produces a shared cooldown. Storage failures are non-fatal.",
+  "raceHandling": "Generation tokens and cancellation prevent stale image/API results from changing a newer card. Image and API timeouts are bounded; each distinct returned URL is tried at most once per render.",
+  "attribution": "Existing metadata stays unchanged. Dynamically displayed images are labeled unverified and link to the article and image file. Old attribution is explicitly labeled as the stored image record when a different image is used. Existing rights notes/restrictions remain visible.",
+  "limitations": [
+    "Live successful image counts depend on the network and visited cards; no bulk download audit of all 581 stored active URLs was performed. getImageLoadingStats() reports last completed outcomes for unique cards visited in the current page session.",
+    "The 11 active cards without stored URLs returned no usable lead image in the live check. Their articles/mappings may redirect to lists or have no lead image; this pass does not rewrite mappings or manually research replacement images.",
+    "Wikipedia lead images and cached fallbacks are unverified; an article lead image may be a composite or an adaptation different from the card. Obvious logos, missing articles and disambiguation pages retain a fallback.",
+    "Rate limits, offline access, blocked CORS, or failure of both thumbnail and original keep a placeholder. No automatic repeated retry storm is introduced.",
+    "GitHub Pages compatibility was checked through anonymous HTTPS origin=* requests and simulated github.io integration tests. The public production site was not deployed or changed.",
+    "The existing strict single-screen mobile readability limitation remains."
+  ],
+  "apiDocumentation": [
+    "https://www.mediawiki.org/wiki/Extension:PageImages#API",
+    "https://www.mediawiki.org/wiki/API:Cross-site_requests"
+  ]
+}
