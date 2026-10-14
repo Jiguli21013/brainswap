@@ -1,0 +1,999 @@
+{
+  "asOf": "2026-10-14",
+  "phase": "Phase 2 automatic image pass complete; unresolved images retain fallbacks",
+  "totalCards": 594,
+  "processedCards": 594,
+  "cardsWithImageUrls": 425,
+  "cardsEligibleForDisplay": 401,
+  "cardsUsingFallbacks": 193,
+  "imagesAdded": 200,
+  "existingImageUrlsPreserved": 225,
+  "previouslyDisplayedImagesPreserved": 208,
+  "imagesWithheld": 24,
+  "unresolvedImageIssues": 193,
+  "validationErrors": 676,
+  "validationWarnings": 335,
+  "validationErrorFields": {
+    "imageUrl": 338,
+    "imageSource": 338
+  },
+  "integrationTests": "PASS (12 batches and final run)",
+  "textAndSourceReferencesPreserved": true,
+  "uiFilesPreserved": true,
+  "productionModified": false,
+  "manualVisualInspectionsThisRun": 0,
+  "existingVisualVerificationRecordsPreserved": 15,
+  "independentTextFactChecksThisRun": 0,
+  "manualReviewModeImplemented": false,
+  "phase1CheckpointSha256": "e1a4fa21bc4350bcfe0e566858b46c7548a4e2213b7621bec60099cc1455deaf",
+  "nextStartingId": null,
+  "lastProcessedId": 250,
+  "processingOrder": "Missing URLs first, withheld images second, existing display images last; all IDs 1–594 processed",
+  "unresolvedCards": [
+    {
+      "id": 86,
+      "name": "David Fincher",
+      "reason": "Available description and categories do not clearly identify the intended person or character."
+    },
+    {
+      "id": 102,
+      "name": "Shakira",
+      "reason": "Available description and categories do not clearly identify the intended person or character."
+    },
+    {
+      "id": 108,
+      "name": "Tina Turner",
+      "reason": "Rights rationale for a television screenshot remains unresolved."
+    },
+    {
+      "id": 119,
+      "name": "Justin Bieber",
+      "reason": "Available description and categories do not clearly identify the intended person or character."
+    },
+    {
+      "id": 151,
+      "name": "The Killers",
+      "reason": "Full group coverage is not established by the cached cropped candidate."
+    },
+    {
+      "id": 163,
+      "name": "Tupac Shakur",
+      "reason": "Passport-image rights rationale remains unresolved."
+    },
+    {
+      "id": 172,
+      "name": "The Prodigy",
+      "reason": "Full group coverage is not established by the cached cropped candidate."
+    },
+    {
+      "id": 200,
+      "name": "John von Neumann",
+      "reason": "Custom LANL reuse conditions require confirmation."
+    },
+    {
+      "id": 224,
+      "name": "Carl Jung",
+      "reason": "No accepted reusable license declaration was available; fallback retained."
+    },
+    {
+      "id": 239,
+      "name": "El Greco",
+      "reason": "The sitter is described as presumed or anonymous, not a securely identified El Greco portrait."
+    },
+    {
+      "id": 240,
+      "name": "Banksy",
+      "reason": "A signature does not identify an actual portrait of Banksy."
+    },
+    {
+      "id": 241,
+      "name": "Donatello",
+      "reason": "The suggested sculptural self-portrait attribution is uncertain."
+    },
+    {
+      "id": 244,
+      "name": "Christian Dior",
+      "reason": "The candidate is a fashion illustration, not an identified Dior portrait."
+    },
+    {
+      "id": 245,
+      "name": "Yves Saint Laurent",
+      "reason": "The prior rights/attribution concern is not resolved by the same cached public-domain label."
+    },
+    {
+      "id": 246,
+      "name": "Gianni Versace",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 269,
+      "name": "Alexander Pushkin",
+      "reason": "Available description and categories do not clearly identify the intended person or character."
+    },
+    {
+      "id": 298,
+      "name": "Grimm brothers",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 299,
+      "name": "Hermione Granger",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 300,
+      "name": "Ron Weasley",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 301,
+      "name": "Albus Dumbledore",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 302,
+      "name": "Severus Snape",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 303,
+      "name": "Lord Voldemort",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 304,
+      "name": "Draco Malfoy",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 305,
+      "name": "Rubeus Hagrid",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 306,
+      "name": "Dobby",
+      "reason": "The source article covers multiple magical creatures, not a Dobby portrait."
+    },
+    {
+      "id": 308,
+      "name": "Princess Leia",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 309,
+      "name": "Han Solo",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 310,
+      "name": "Yoda",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 311,
+      "name": "Chewbacca",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 312,
+      "name": "R2-D2",
+      "reason": "The lead candidate is branding or cover material, not clearly reusable character artwork."
+    },
+    {
+      "id": 313,
+      "name": "C-3PO",
+      "reason": "The lead candidate is branding or cover material, not clearly reusable character artwork."
+    },
+    {
+      "id": 314,
+      "name": "Iron Man",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 315,
+      "name": "Captain America",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 316,
+      "name": "Thor",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 317,
+      "name": "Hulk",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 318,
+      "name": "Spider-Man",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 319,
+      "name": "Loki",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 320,
+      "name": "Thanos",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 321,
+      "name": "Deadpool",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 322,
+      "name": "Wolverine",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 323,
+      "name": "Batman",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 324,
+      "name": "Superman",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 325,
+      "name": "Wonder Woman",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 326,
+      "name": "The Joker",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 327,
+      "name": "Harley Quinn",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 328,
+      "name": "Frodo Baggins",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 329,
+      "name": "Gandalf",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 330,
+      "name": "Aragorn",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 331,
+      "name": "Legolas",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 333,
+      "name": "Bilbo Baggins",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 334,
+      "name": "Geralt of Rivia",
+      "reason": "Additional rights evidence needed for fan art, deletion review, or territorial freedom-of-panorama restriction."
+    },
+    {
+      "id": 335,
+      "name": "Jon Snow",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 336,
+      "name": "Daenerys Targaryen",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 337,
+      "name": "Tyrion Lannister",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 338,
+      "name": "Indiana Jones",
+      "reason": "The lead candidate is branding or cover material, not clearly reusable character artwork."
+    },
+    {
+      "id": 339,
+      "name": "Lara Croft",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 340,
+      "name": "James Bond",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 341,
+      "name": "Katniss Everdeen",
+      "reason": "Additional rights evidence needed for fan art, deletion review, or territorial freedom-of-panorama restriction."
+    },
+    {
+      "id": 342,
+      "name": "Forrest Gump",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 343,
+      "name": "The Terminator",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 344,
+      "name": "John Wick",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 345,
+      "name": "Neo",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 346,
+      "name": "Ellen Ripley",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 347,
+      "name": "Rocky Balboa",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 350,
+      "name": "Tony Montana",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 351,
+      "name": "Hannibal Lecter",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 352,
+      "name": "Freddy Krueger",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 353,
+      "name": "Jason Voorhees",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 354,
+      "name": "Michael Myers",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 355,
+      "name": "Pennywise",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 356,
+      "name": "Jesse Pinkman",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 357,
+      "name": "Saul Goodman",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 358,
+      "name": "Tony Soprano",
+      "reason": "Additional rights evidence needed for fan art, deletion review, or territorial freedom-of-panorama restriction."
+    },
+    {
+      "id": 359,
+      "name": "Dexter Morgan",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 360,
+      "name": "Dr. Gregory House",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 363,
+      "name": "Sheldon Cooper",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 364,
+      "name": "Rachel Green",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 365,
+      "name": "Ross Geller",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 366,
+      "name": "Monica Geller",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 367,
+      "name": "Chandler Bing",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 368,
+      "name": "Joey Tribbiani",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 369,
+      "name": "Phoebe Buffay",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 370,
+      "name": "Michael Scott",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 371,
+      "name": "Dwight Schrute",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 372,
+      "name": "Eleven",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 375,
+      "name": "Donald Duck",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 376,
+      "name": "Daisy Duck",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 377,
+      "name": "Goofy",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 379,
+      "name": "Scrooge McDuck",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 380,
+      "name": "Chip",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 381,
+      "name": "Dale",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 384,
+      "name": "Dumbo",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 385,
+      "name": "Bambi",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 386,
+      "name": "Simba",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 387,
+      "name": "Mufasa",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 388,
+      "name": "Scar",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 389,
+      "name": "Cinderella",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 390,
+      "name": "Snow White",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 391,
+      "name": "Ariel",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 392,
+      "name": "Belle",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 393,
+      "name": "Jasmine",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 394,
+      "name": "Mulan",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 395,
+      "name": "Pocahontas",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 396,
+      "name": "Rapunzel",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 397,
+      "name": "Elsa",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 398,
+      "name": "Anna",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 399,
+      "name": "Maleficent",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 400,
+      "name": "Cruella de Vil",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 401,
+      "name": "Ursula",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 402,
+      "name": "Jafar",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 403,
+      "name": "Hades",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 404,
+      "name": "Donkey",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 405,
+      "name": "Princess Fiona",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 406,
+      "name": "Puss in Boots",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 407,
+      "name": "Po",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 408,
+      "name": "Master Shifu",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 409,
+      "name": "Toothless",
+      "reason": "The lead candidate is a franchise logo rather than Toothless."
+    },
+    {
+      "id": 410,
+      "name": "Hiccup",
+      "reason": "The lead candidate is a franchise logo rather than Hiccup."
+    },
+    {
+      "id": 411,
+      "name": "Alex the Lion",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 412,
+      "name": "Marty the Zebra",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 413,
+      "name": "Gloria the Hippo",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 414,
+      "name": "Melman the Giraffe",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 415,
+      "name": "King Julien",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 416,
+      "name": "Skipper",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 417,
+      "name": "Gru",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 418,
+      "name": "Minions",
+      "reason": "Additional rights evidence needed for fan art, deletion review, or territorial freedom-of-panorama restriction."
+    },
+    {
+      "id": 419,
+      "name": "Woody",
+      "reason": "Additional rights evidence needed for fan art, deletion review, or territorial freedom-of-panorama restriction."
+    },
+    {
+      "id": 420,
+      "name": "Buzz Lightyear",
+      "reason": "Additional rights evidence needed for fan art, deletion review, or territorial freedom-of-panorama restriction."
+    },
+    {
+      "id": 421,
+      "name": "Jessie",
+      "reason": "Additional rights evidence needed for fan art, deletion review, or territorial freedom-of-panorama restriction."
+    },
+    {
+      "id": 422,
+      "name": "Lightning McQueen",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 423,
+      "name": "Mater",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 424,
+      "name": "Nemo",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 425,
+      "name": "Dory",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 426,
+      "name": "Marlin",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 427,
+      "name": "Mike Wazowski",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 428,
+      "name": "Sulley",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 429,
+      "name": "WALL-E",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 430,
+      "name": "Bugs Bunny",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 431,
+      "name": "Daffy Duck",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 432,
+      "name": "Tom",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 433,
+      "name": "Jerry",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 434,
+      "name": "Scooby-Doo",
+      "reason": "The lead candidate is branding or cover material, not clearly reusable character artwork."
+    },
+    {
+      "id": 435,
+      "name": "Shaggy Rogers",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 436,
+      "name": "Fred Flintstone",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 437,
+      "name": "Garfield",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 438,
+      "name": "Bart Simpson",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 439,
+      "name": "Homer Simpson",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 440,
+      "name": "Eric Cartman",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 441,
+      "name": "Kenny McCormick",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 442,
+      "name": "Stan Marsh",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 443,
+      "name": "Kyle Broflovski",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 447,
+      "name": "SpongeBob SquarePants",
+      "reason": "The lead candidate is branding or cover material, not clearly reusable character artwork."
+    },
+    {
+      "id": 448,
+      "name": "Bender",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 449,
+      "name": "Philip J. Fry",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 450,
+      "name": "Pikachu",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 451,
+      "name": "Ash Ketchum",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 452,
+      "name": "Sailor Moon",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 453,
+      "name": "Naruto Uzumaki",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 454,
+      "name": "Totoro",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 466,
+      "name": "Peter the Great",
+      "reason": "Available description and categories do not clearly identify the intended person or character."
+    },
+    {
+      "id": 473,
+      "name": "Franklin D. Roosevelt",
+      "reason": "Available description and categories do not clearly identify the intended person or character."
+    },
+    {
+      "id": 481,
+      "name": "Margaret Thatcher",
+      "reason": "No accepted reusable license declaration was available; fallback retained."
+    },
+    {
+      "id": 504,
+      "name": "Mark Zuckerberg",
+      "reason": "Available description and categories do not clearly identify the intended person or character."
+    },
+    {
+      "id": 528,
+      "name": "Christopher Columbus",
+      "reason": "Source identifies the historical sitter only tentatively; no sufficiently certain identity established."
+    },
+    {
+      "id": 532,
+      "name": "Ralph Fiennes",
+      "reason": "Available description and categories do not clearly identify the intended person or character."
+    },
+    {
+      "id": 556,
+      "name": "Buffy Summers",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 557,
+      "name": "Damon Salvatore",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 558,
+      "name": "Dean Winchester",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 559,
+      "name": "Sam Winchester",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 560,
+      "name": "Castiel",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 561,
+      "name": "Fox Mulder",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 562,
+      "name": "Dana Scully",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 563,
+      "name": "Carrie Bradshaw",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 564,
+      "name": "Mr. Bean",
+      "reason": "Actor portrait does not establish an image of Mr. Bean in character."
+    },
+    {
+      "id": 565,
+      "name": "Kevin McCallister",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 566,
+      "name": "Willy Wonka",
+      "reason": "Available description and categories do not clearly identify the intended person or character."
+    },
+    {
+      "id": 567,
+      "name": "Ace Ventura",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 568,
+      "name": "Stitch",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 569,
+      "name": "Timon",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 570,
+      "name": "Pumbaa",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 571,
+      "name": "Baloo",
+      "reason": "No accepted reusable license declaration was available; fallback retained."
+    },
+    {
+      "id": 574,
+      "name": "Genie",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 575,
+      "name": "Aladdin",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 576,
+      "name": "Mushu",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 577,
+      "name": "Olaf",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 578,
+      "name": "Baymax",
+      "reason": "The lead candidate depicts Marvel Baymax; this card describes Disney’s healthcare robot."
+    },
+    {
+      "id": 579,
+      "name": "Ralph — Wreck-It Ralph",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 580,
+      "name": "Rick Sanchez",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 581,
+      "name": "Morty Smith",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 584,
+      "name": "Spartacus",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 585,
+      "name": "Leonidas I",
+      "reason": "Source identifies the historical sitter only tentatively; no sufficiently certain identity established."
+    },
+    {
+      "id": 593,
+      "name": "Robin Hood",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    },
+    {
+      "id": 594,
+      "name": "King Arthur",
+      "reason": "No Commons image with reusable license metadata was found for the saved lead candidate in this automatic pass."
+    }
+  ]
+}
