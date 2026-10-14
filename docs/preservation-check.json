@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-14",
+  "preservedRange": [
+    1,
+    375
+  ],
+  "originalEnrichedCardsPreserved": true,
+  "checkpointSemanticSha256": "850288ffa15337c4763bf74887bc0960099b93ab26ed2476112bcf1dfd187e56",
+  "currentSemanticSha256": "850288ffa15337c4763bf74887bc0960099b93ab26ed2476112bcf1dfd187e56",
+  "all594IdsAndOrderingPreserved": true,
+  "all594ExistingImageFieldsUnchanged": true,
+  "runtimeFilesUnchanged": true,
+  "appliesThrough": "Phase 1 completion; Phase 2 may add licensed image fields while retaining all text",
+  "priorPreservationEvidence": {
+    "date": "2026-10-14",
+    "preservedRange": [
+      1,
+      250
+    ],
+    "originalEnrichedCardsPreserved": true,
+    "checkpointSemanticSha256": "17f06a443b79e5639b0f7f12c6a38d3dda2dc7992b2c3f24dad33b980d8ad338",
+    "currentSemanticSha256": "17f06a443b79e5639b0f7f12c6a38d3dda2dc7992b2c3f24dad33b980d8ad338",
+    "all594IdsAndOrderingPreserved": true,
+    "all594ExistingImageFieldsUnchanged": true,
+    "runtimeFilesUnchanged": true,
+    "priorPreservationEvidence": {
+      "originalEnrichedCardsPreserved": true,
+      "preservedRange": [
+        1,
+        100
+      ],
+      "checkpointSemanticSha256": "38098f5d749e6fad7a1d59fa838903924058c3b26dfbb4d841691c39670439e2",
+      "currentSemanticSha256": "38098f5d749e6fad7a1d59fa838903924058c3b26dfbb4d841691c39670439e2",
+      "all594IdsAndOrderingPreserved": true,
+      "date": "2026-10-14"
+    }
+  }
+}
