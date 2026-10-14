@@ -1,0 +1,93 @@
+{
+  "date": "2026-10-14",
+  "method": "Real Codex in-app browser, all 594 canonical cards rendered with the application renderer at each viewport; only image network loads suppressed in temporary measurement fixture. Live website separately checked for image cropping, animation, document overflow, and keyboard navigation.",
+  "viewports": [
+    {
+      "viewport": {
+        "height": 1080,
+        "width": 1920
+      },
+      "cardsTested": 594,
+      "cardsFitWithoutVerticalScroll": 594,
+      "horizontalOverflowCards": 0,
+      "textClippingCards": 0,
+      "maximumNavigationBottom": 940.390625,
+      "mobileAndTabletScrollPermitted": false
+    },
+    {
+      "viewport": {
+        "height": 900,
+        "width": 1440
+      },
+      "cardsTested": 594,
+      "cardsFitWithoutVerticalScroll": 594,
+      "horizontalOverflowCards": 0,
+      "textClippingCards": 0,
+      "maximumNavigationBottom": 824.96875,
+      "mobileAndTabletScrollPermitted": false
+    },
+    {
+      "viewport": {
+        "height": 768,
+        "width": 1366
+      },
+      "cardsTested": 594,
+      "cardsFitWithoutVerticalScroll": 594,
+      "horizontalOverflowCards": 0,
+      "textClippingCards": 0,
+      "maximumNavigationBottom": 719.7265625,
+      "mobileAndTabletScrollPermitted": false
+    },
+    {
+      "viewport": {
+        "height": 800,
+        "width": 1280
+      },
+      "cardsTested": 594,
+      "cardsFitWithoutVerticalScroll": 594,
+      "horizontalOverflowCards": 0,
+      "textClippingCards": 0,
+      "maximumNavigationBottom": 735.2265625,
+      "mobileAndTabletScrollPermitted": false
+    },
+    {
+      "viewport": {
+        "height": 1024,
+        "width": 768
+      },
+      "cardsTested": 594,
+      "cardsFitWithoutVerticalScroll": 0,
+      "horizontalOverflowCards": 0,
+      "textClippingCards": 0,
+      "maximumNavigationBottom": 1389.2734375,
+      "mobileAndTabletScrollPermitted": true
+    },
+    {
+      "viewport": {
+        "height": 844,
+        "width": 390
+      },
+      "cardsTested": 594,
+      "cardsFitWithoutVerticalScroll": 0,
+      "horizontalOverflowCards": 0,
+      "textClippingCards": 0,
+      "maximumNavigationBottom": 1849.3515625,
+      "mobileAndTabletScrollPermitted": true
+    }
+  ],
+  "desktopLaptopAllCardsScrollFree": true,
+  "horizontalOverflow": false,
+  "textClipping": false,
+  "imageObjectFit": "cover",
+  "imageObjectPosition": "center top (50% 0%)",
+  "animationsPreserved": true,
+  "liveKeyboardNavigation": "ArrowRight changed the card; ArrowLeft restored the original card",
+  "dataCardsSha256Before": "b29ec0c79791238fc73ba13c6649fed09f1a0241e567a36f1b8cff95dcb03192",
+  "dataCardsSha256After": "b29ec0c79791238fc73ba13c6649fed09f1a0241e567a36f1b8cff95dcb03192",
+  "dataUnchanged": true,
+  "totalCards": 594,
+  "imageUrls": 583,
+  "integrationTests": "PASS",
+  "productionModified": false,
+  "limitations": "Viewport measurements use default browser font settings. Narrow screens, larger text settings, browser zoom, or smaller desktop heights can scroll naturally; no content is hidden or truncated."
+}
