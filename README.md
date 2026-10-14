@@ -16,8 +16,6 @@ The entire interface now scales proportionally to fit the available window width
 
 ## Cards excluded from display
 
-Vladimir Putin (ID 478) and Adolf Hitler (ID 492) are excluded from the displayed deck at the owner’s request. The website shows 592 cards; canonical records and IDs remain preserved.
-
 Required runtime files: `index.html`, `app.js`, `viewport-fit.js`, `image-loader.js`, `theme.js`, `themes.css`, `card-transitions.js`, `card-transitions.css`, and `data/cards.json`. Include all helper scripts and stylesheets when copying the staging website.
 
 ## Themes and transitions
