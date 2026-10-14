@@ -15,6 +15,9 @@ The website now tries existing HTTPS image URLs without a verification-status di
 The entire interface now scales proportionally to fit the available window width and height with no document scrolling. All 594 cards pass real-browser fitting checks at all eight requested viewport sizes. The strict single-screen mode makes mobile text and buttons small: effective list text can fall to 8.28px at 390 × 844. See docs/viewport-fit-tests.md for the full test results and readability limitations.
 
 ## Cards excluded from display
+
+Vladimir Putin (ID 478) and Adolf Hitler (ID 492) are excluded from the displayed deck at the owner’s request. The website shows 592 cards; canonical records and IDs remain preserved.
+
 Required runtime files: `index.html`, `app.js`, `viewport-fit.js`, `image-loader.js`, `theme.js`, `themes.css`, `card-transitions.js`, `card-transitions.css`, and `data/cards.json`. Include all helper scripts and stylesheets when copying the staging website.
 
 ## Themes and transitions

@@ -5,6 +5,12 @@ const wikipediaImageCache = new Map();
 const pendingWikipediaImages = new Map();
 const wikipediaImageFailures = new Map();
 const observedCardImages = new Map();
+// Keep only a few successfully decoded images for instant back/forward navigation.
+const decodedCardImages = new Map();
+function rememberDecodedImage(url, image) {
+  decodedCardImages.delete(url); decodedCardImages.set(url, image);
+  while (decodedCardImages.size > 6) decodedCardImages.delete(decodedCardImages.keys().next().value);
+}
 let wikipediaCooldownUntil = 0;
 let imageRenderGeneration = 0;
 let cancelImageAttempt = null;
@@ -141,6 +147,8 @@ function setImageCredit(card, kind, candidate) {
   refitImageContent();
 }
 function tryImageUrl(url) {
+  const cached = decodedCardImages.get(url);
+  if (cached?.naturalWidth > 0 && cached.complete) return Promise.resolve(true);
   return new Promise(resolve => {
     const probe = new Image();
     let settled = false;
@@ -153,11 +161,21 @@ function tryImageUrl(url) {
     const cancel = () => { finish(false); probe.src = ''; };
     const timeout = setTimeout(cancel, 10000);
     cancelImageAttempt = cancel;
-    probe.onload = () => finish(probe.naturalWidth > 0);
+    probe.onload = async () => {
+      try {
+        if (typeof probe.decode === 'function') await probe.decode();
+        if (settled) return;
+        if (probe.naturalWidth > 0) rememberDecodedImage(url, probe);
+        finish(probe.naturalWidth > 0);
+      } catch { finish(false); }
+    };
     probe.onerror = () => finish(false);
     probe.referrerPolicy = 'no-referrer';
     probe.src = url;
   });
+}
+function loadingImagePlaceholder() {
+  return fallbackImage().replace(encodeURIComponent('Image unavailable'), encodeURIComponent('Loading image…'));
 }
 function getImageLoadingStats() {
   const counts = {stored:0,wikipedia:0,placeholder:0};
@@ -168,11 +186,18 @@ async function showCardImage(card) {
   activeImageCardId = card.id;
   const generation = ++imageRenderGeneration;
   if (cancelImageAttempt) cancelImageAttempt();
-  const current = () => generation === imageRenderGeneration;
-  const img = document.getElementById('portrait');
+  let img = document.createElement('img');
+  img.id = 'portrait'; img.referrerPolicy = 'no-referrer';
+  img.dataset.cardId = String(card.id);
+  img.dataset.imageState = 'loading';
+  // A new element has no previously painted bitmap, even before the SVG decodes.
+  const previousImage = document.getElementById('portrait');
+  previousImage.onload = null; previousImage.onerror = null;
+  previousImage.replaceWith(img);
+  const current = () => generation === imageRenderGeneration && activeImageCardId === card.id && document.getElementById('portrait') === img;
   const title = imageTitleKey(card.wikiTitle);
   const tried = new Set();
-  img.onload = null; img.onerror = null; img.src = fallbackImage(); img.alt = 'Image loading or unavailable for ' + card.name;
+  img.onload = null; img.onerror = null; img.src = loadingImagePlaceholder(); img.alt = 'Image loading or unavailable for ' + card.name;
   document.getElementById('image-credit').replaceChildren();
   if (imageHttpsUrl(card.imageUrl)) setImageCredit(card, 'stored');
   currentImageLoading = true;
@@ -182,23 +207,33 @@ async function showCardImage(card) {
     if (!current()) return;
     observedCardImages.set(card.id, {kind,url});
     currentImageLoading = false;
-    img.dataset.imageKind = kind;
+    const loadedImage = decodedCardImages.get(url);
+    if (!loadedImage) return;
+    const instant = loadedImage.dataset.cardId !== undefined;
+    loadedImage.onload = null; loadedImage.onerror = null;
+    loadedImage.id = 'portrait'; loadedImage.referrerPolicy = 'no-referrer';
+    loadedImage.dataset.cardId = String(card.id);
+    loadedImage.dataset.imageState = 'loaded';
+    loadedImage.dataset.imageKind = kind;
+    loadedImage.classList.toggle('portrait-arrive', !instant);
+    img.replaceWith(loadedImage); img = loadedImage;
     img.alt = 'Image of ' + card.name;
     setImageCredit(card, kind, candidate);
     // Cached image bytes normally serve this assignment. Still handle a display-stage failure.
     img.onerror = () => {
       if (!current()) return;
-      img.onerror = null;
+      img.onerror = null; decodedCardImages.delete(url);
       if (kind === 'stored') void useWikipedia();
       else { forgetWikipediaImage(title); placeholder('wikipedia_image_failed'); }
     };
-    img.src = url;
+    // The decoded probe itself is displayed; no second src change can retain old pixels.
   };
   const placeholder = reason => {
     if (!current()) return;
     observedCardImages.set(card.id, {kind:'placeholder',reason});
     currentImageLoading = false;
     img.dataset.imageKind = 'placeholder';
+    img.dataset.imageState = 'failed'; img.classList.remove('portrait-arrive');
     img.onerror = null; img.src = fallbackImage(); img.alt = 'Labeled image fallback for ' + card.name;
     document.getElementById('image-credit').replaceChildren();
     // Keep existing rights notes and source metadata even when neither image can load.
@@ -210,7 +245,11 @@ async function showCardImage(card) {
     if (!current()) return;
     currentImageLoading = true;
     img.dataset.imageKind = 'loading';
-    img.onerror = null; img.src = fallbackImage(); img.alt = 'Image loading or unavailable for ' + card.name;
+    const loadingImage = document.createElement('img');
+    loadingImage.id = 'portrait'; loadingImage.referrerPolicy = 'no-referrer';
+    loadingImage.dataset.cardId = String(card.id); loadingImage.dataset.imageState = 'loading'; loadingImage.dataset.imageKind = 'loading';
+    img.onload = null; img.onerror = null; img.replaceWith(loadingImage); img = loadingImage;
+    img.src = loadingImagePlaceholder(); img.alt = 'Image loading or unavailable for ' + card.name;
     let candidate = await requestWikipediaImage(title);
     if (!current()) return;
     if (candidate?.cached && tried.has(candidate.url)) { forgetWikipediaImage(title); candidate = await requestWikipediaImage(title); }
@@ -234,6 +273,7 @@ async function showCardImage(card) {
   const stored = imageHttpsUrl(card.imageUrl);
   if (stored) {
     tried.add(stored);
+    if (decodedCardImages.get(stored)?.complete && decodedCardImages.get(stored)?.naturalWidth > 0) { commit('stored', stored); return; }
     const loaded = await tryImageUrl(stored);
     if (!current()) return;
     if (loaded) { commit('stored', stored); return; }

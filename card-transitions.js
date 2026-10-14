@@ -39,6 +39,7 @@ function animateCardNavigation(updateCard, direction = 'next') {
   const outgoing = card.cloneNode(true);
   outgoing.removeAttribute('id');
   for (const node of outgoing.querySelectorAll('[id]')) node.removeAttribute('id');
+  for (const image of outgoing.querySelectorAll('img')) image.classList?.remove('portrait-arrive');
   outgoing.setAttribute('aria-hidden','true'); outgoing.setAttribute('inert','');
   outgoing.classList.remove('fade','card-slide-in'); outgoing.classList.add('outgoing-card');
   outgoing.style.setProperty('--outgoing-start-transform', startTransform === 'none' ? 'translateX(0)' : startTransform);

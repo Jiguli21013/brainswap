@@ -1,0 +1,66 @@
+{
+  "status": "complete_local_not_deployed",
+  "filesModified": [
+    "image-loader.js",
+    "card-transitions.js",
+    "card-transitions.css",
+    "scripts/test-image-loader.mjs",
+    "scripts/test-integration.mjs"
+  ],
+  "filesAdded": [
+    "scripts/image-navigation-browser-fixture.js",
+    "scripts/serve-image-navigation-tests.py",
+    "docs/stale-image-navigation-report.md",
+    "docs/stale-image-navigation-report.json"
+  ],
+  "browserResults": {
+    "desktop-1440": {
+      "passed": true,
+      "checks": 19,
+      "frames": 312,
+      "violations": 0,
+      "layoutWidths": [
+        492
+      ],
+      "layoutHeights": [
+        561
+      ]
+    },
+    "laptop-1366": {
+      "passed": true,
+      "checks": 19,
+      "frames": 312,
+      "violations": 0,
+      "layoutWidths": [
+        492
+      ],
+      "layoutHeights": [
+        561
+      ]
+    },
+    "mobile-390": {
+      "passed": true,
+      "checks": 19,
+      "frames": 313,
+      "violations": 0,
+      "layoutWidths": [
+        474
+      ],
+      "layoutHeights": [
+        260
+      ]
+    }
+  },
+  "existingTestSuites": {
+    "integration": "PASS",
+    "imageLoader": "PASS",
+    "viewportFit": "PASS",
+    "themesTransitions": "PASS"
+  },
+  "preloading": false,
+  "decodedImageCacheLimit": 6,
+  "canonicalSha256": "b29ec0c79791238fc73ba13c6649fed09f1a0241e567a36f1b8cff95dcb03192",
+  "canonicalUnchanged": true,
+  "productionModified": false,
+  "browserThrottling": "Controlled 2-second and 150-ms local response delays; browser DevTools network throttling unavailable."
+}

@@ -6,17 +6,18 @@ const code = await fs.readFile(new URL('app.js',root),'utf8');
 const imageCode = await fs.readFile(new URL('image-loader.js',root),'utf8');
 const data = JSON.parse(await fs.readFile(new URL('data/cards.json',root),'utf8'));
 class Element {
-  constructor(tagName='DIV') { this.tagName=tagName; this.style={}; this.dataset={}; this.children=[]; this.textContent=''; this.hidden=false; this.classList={remove(){},add(){}}; this.section={hidden:false}; }
+  constructor(tagName='DIV') { this.tagName=tagName; this.style={}; this.dataset={}; this.children=[]; this.textContent=''; this.hidden=false; this.classList={remove(){},add(){},toggle(){}}; this.section={hidden:false}; }
   replaceChildren(...items) { this.children=items; }
   append(...items) { this.children.push(...items); }
+  replaceWith(node) { this.registry.set('portrait',node); node.registry=this.registry; }
   closest() { return this.section; }
   removeAttribute(name) { delete this[name]; }
 }
 async function boot(response, protocol='http:', hostname='localhost', search='') {
   const elements=new Map(); const errors=[]; const fitRequests=[];
-  const document={getElementById(id){if(!elements.has(id))elements.set(id,new Element());return elements.get(id)},createElement(tag){return new Element(tag.toUpperCase())},createTextNode(text){return {textContent:text}},addEventListener(type,fn){this.listener=fn}};
+  const document={getElementById(id){if(!elements.has(id)){const el=new Element();el.registry=elements;elements.set(id,el);}return elements.get(id)},createElement(tag){const el=new Element(tag.toUpperCase());el.registry=elements;return el;},createTextNode(text){return {textContent:text}},addEventListener(type,fn){this.listener=fn}};
   const store=new Map();
-  class FakeImage { constructor(){this.naturalWidth=100;} set src(value){this._src=value;if(value)queueMicrotask(()=>this.onload?.());} }
+  class FakeImage extends Element { constructor(){super('IMG');this.registry=elements;this.naturalWidth=100;this.complete=false;} get src(){return this._src;} set src(value){this._src=value;if(value)queueMicrotask(()=>{this.complete=true;this.onload?.();});} }
   const context=vm.createContext({document,URL,URLSearchParams,Image:FakeImage,AbortController,setTimeout,clearTimeout,localStorage:{getItem:k=>store.get(k)||null,setItem:(k,v)=>store.set(k,v)},encodeURIComponent,scheduleViewportFit:()=>fitRequests.push(1),location:{protocol,hostname,search},fetch:async path=>path==='data/cards.json'?response:{ok:true,status:200,json:async()=>({query:{pages:[]}})},console:{error:e=>errors.push(String(e))}});
   vm.runInContext(imageCode,context);
   vm.runInContext(code,context);

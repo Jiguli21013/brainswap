@@ -7,6 +7,12 @@
 .card-stage>.card:not(.outgoing-card){position:relative;z-index:2}
 .card-slide-in{animation:card-enter .3s cubic-bezier(.22,1,.36,1) both;will-change:transform,opacity}
 .card-slide-out{animation:card-leave .3s cubic-bezier(.22,1,.36,1) both;will-change:transform,opacity}
-@keyframes card-enter{from{transform:translateX(calc(var(--slide-distance)*var(--slide-sign)));opacity:.15}to{transform:translateX(0);opacity:1}}
+/* Keep the incoming image surface opaque so an outgoing photo cannot bleed through. */
+@keyframes card-enter{from{transform:translateX(calc(var(--slide-distance)*var(--slide-sign)));opacity:1}to{transform:translateX(0);opacity:1}}
 @keyframes card-leave{from{transform:var(--outgoing-start-transform,translateX(0));opacity:var(--outgoing-start-opacity,1)}to{transform:translateX(calc(var(--slide-distance)*var(--slide-sign)*-1));opacity:0}}
 @media(prefers-reduced-motion:reduce){.card-slide-in,.card-slide-out,.fade{animation:none;will-change:auto}.button{transition:none}.button:hover{transform:none}}
+
+/* Only a decoded incoming portrait fades; loading/fallback geometry stays unchanged. */
+.portrait-arrive{animation:portrait-arrive .18s ease-out both}
+@keyframes portrait-arrive{from{opacity:0}to{opacity:1}}
+@media(prefers-reduced-motion:reduce){.portrait-arrive{animation:none}}
